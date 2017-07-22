@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Miguel Carneiro's WebPage</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="Content/css/Site.css">
+	<link rel="stylesheet" href="Content/css/radialProgress.css">
+</head>
+
+<body class="homepage">
+
+    <header id="header">
+		<nav class="navbar navbar-inverse navbar-fixed-top" role="banner">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<div class="navbar-brand logo">Miguel Carneiro</div>
+				</div>
+
+				<div class="collapse navbar-collapse navbar-right">
+					<ul class="nav navbar-nav">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="skills.html">Skills</a></li>
+						<li><a href="educExp.html">Education & Experience</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<div class="body-content">
+		<div class="body-content-inside">
+			<h1 class="headerCustom">Skills</h1>
+			<hr>
+			
+			<div class="container">
+				<div class="row">
+				
+					<div class="col-sm-3 text-center">
+						<div class="HTML5 circle">
+							<strong></strong>
+							<span style="color:black"><b>HTML5</b></span>
+						</div>
+					</div>
+
+					<div class="col-sm-3 text-center">
+						<div class="CSS3 circle">
+							<strong></strong>
+							<span style="color:black"><b>CSS3</b></span>
+						</div>
+					</div>
+					
+					<div class="col-sm-3 text-center">
+						<div class="jQuery_JS circle">
+							<strong></strong>
+							<span style="color:black"><b>jQuery/JavaScript</b></span>
+						</div>
+					</div>
+					
+					<div class="col-sm-3 text-center">
+						<div class="csharp circle">
+							<strong></strong>
+							<span style="color:black"><b>C#</b></span>
+						</div>
+					</div>
+					
+				</div>
+				
+				<div class="row">
+				
+					<div class="col-sm-3 text-center">
+						<div class="PHP circle">
+							<strong></strong>
+							<span style="color:black"><b>PHP</b></span>
+						</div>
+					</div>
+				
+					<div class="col-sm-3 text-center">
+						<div class="Java circle">
+							<strong></strong>
+							<span style="color:black"><b>Java</b></span>
+						</div>
+					</div>
+					
+					<div class="col-sm-3 text-center">
+						<div class="CPlusPlus circle">
+							<strong></strong>
+							<span style="color:black"><b>C/C++</b></span>
+						</div>
+					</div>
+					
+					<div class="col-sm-3 text-center">
+						<div class="SQL_PLSQL circle">
+							<strong></strong>
+							<span style="color:black"><b>SQL/PL-SQL</b></span>
+						</div>
+					</div>
+					
+				</div>
+				<hr>
+				<br>
+				<div style="text-align:justify; text-justify:inter-word">
+					<h2>I finished my degree in computer engineering after doing an intership at SONAE Sierra, 
+						where I was requested to develop a server application in a ASP.NET MVC project, for 
+						collecting and consulting the attendance records of employees housed in shopping centers 
+						managed by the company. The application had to communicate with all RFID terminals 
+						installed in each shopping centre, collect the information and store it in a database 
+						developed in SQL. It also allowed users to consult their records in the form of a list 
+						or through charts created by Google Charts.</h3>
+					<h2>The project was evaluated by ISEP with a final grade of 15 (out of 20).</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer id="footer">
+		<div class="container">
+			<h6 id="year"></h6>
+		</div>
+	</footer>
+
+	<script>
+		document.getElementById("year").innerHTML = "@ " + new Date().getFullYear() + " Miguel Carneiro";
+	</script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="Content/js/circle-progress.js"></script>
+	<script src="Content/js/radialProgress.js"></script>
+	
+</body>
+</html>

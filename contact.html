@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Miguel Carneiro's WebPage</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="Content/css/Site.css">
+	<link rel="stylesheet" href="Content/css/animate.min.css">
+</head>
+
+<body class="homepage">
+
+    <header id="header">
+		<nav class="navbar navbar-inverse navbar-fixed-top" role="banner">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<div class="navbar-brand logo">Miguel Carneiro</div>
+				</div>
+
+				<div class="collapse navbar-collapse navbar-right">
+					<ul class="nav navbar-nav">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="skills.html">Skills</a></li>
+						<li><a href="educExp.html">Education & Experience</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<div class="body-content">
+		<div class="body-content-inside">
+			<h1 class="headerCustom">Contacts</h1>
+			<hr>
+
+			<div class="container">
+				<div class="row">
+
+					<div class="col-sm-6">
+						<form class="form-horizontal" id="gform" method="post" action="https://script.google.com/macros/s/AKfycbw-OmqdpmtlCRuXAjMc7WsOB5-StJeQXBe-eUrxeaq7Ii74LBg/exec">
+							<h1 style="color:black"><img src="Content/img/email.png" alt="Location" class="img-responsive" style="width:40px; height:40px;"> Contact Me</h1>
+							<br><br>
+							<div class="form-group">
+								<div class="col-sm-6">
+									<input type="text" placeholder="Name" class="form-control" id="name" name="name">
+								</div>
+								<div class="col-sm-6">
+									<input type="email" placeholder="Email" class="form-control" id="email" name="email">
+								</div>
+							</div>
+													
+							<div class="form-group">
+								<div class="col-sm-6">
+									<input type="text" placeholder="Company Name" class="form-control" id="company" name="company">
+								</div>
+								<div class="col-sm-6">
+									<input type="text" placeholder="Phone" class="form-control" id="phone" name="phone">
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<div class="col-sm-12">
+									<textarea class="form-control" id="message" placeholder="Message" rows="5" name="message"></textarea>
+								</div>
+							</div>
+	  
+							<button type="reset" class="btn btn-danger"><span class="glyphicon glyphicon-erase" aria-hidden="true"></span> Reset</button>
+							<button type="submit" class="btn btn-danger"><span class="glyphicon glyphicon-send" aria-hidden="true"></span> Submit</button>
+						</form>
+						
+						<div style="display:none;" id="thankyou_message">
+							<h2>Your message has been sent.</h2>
+							<h3>Thanks, I will get back to you as soon as possible!</h3>
+						</div>
+					</div>
+					
+					<div class="col-sm-6">
+						<h1 style="color:black"><img src="Content/img/location.png" alt="Location" class="img-responsive" style="width:40px; height:40px;"> Locate Me</h1>
+						<div id="map" style="width:100%; height:350px">
+						</div>
+					</div>
+				</div>
+				
+				<br>
+				<hr>
+				<div class="row" id="main-slider">
+					<div class="col-sm-3 active">
+						<h2 class="animation animated-item-1"><img src="Content/img/location.png" alt="Location" style="width:25px; height:25px;"> Location</h2>
+						<p class="animation animated-item-1">Rua de Ribeiro de Sousa, n. 317 - 2<p>
+						<p class="animation animated-item-1">4250-408, Porto - Portugal</p>
+					</div>
+					
+					<div class="col-sm-3 active">
+						<h2 class="animation animated-item-2"><img src="Content/img/email.png" alt="Email" style="width:25px; height:25px;"> Email</h2>
+						<p class="animation animated-item-2"><a href="mailto:carneiro.miguel@gmail.com" target="_top">carneiro.miguel@gmail.com</a></p>
+					</div>
+					
+					<div class="col-sm-3 active">
+						<h2 class="animation animated-item-3"><img src="Content/img/mobile.png" alt="Mobile" style="width:25px; height:25px;"> Phone</h2>
+						<p class="animation animated-item-3">+351 918 602 874</p>
+					</div>
+					
+					<div class="col-sm-3 active">
+						<h2 class="animation animated-item-4"><img src="Content/img/skype.png" alt="Skype" style="width:25px; height:25px;"> Skype</h2>
+						<p class="animation animated-item-4">miguelfdc</p>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+
+	<footer id="footer">
+		<div class="container">
+			<h6 id="year"></h6>
+		</div>
+	</footer>
+
+	<script>
+		document.getElementById("year").innerHTML = "@ " + new Date().getFullYear() + " Miguel Carneiro";
+	</script>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script data-cfasync="false" type="text/javascript" src="Content/js/form-submission-handler.js"></script>
+	
+	<script>
+		function myMap() {
+			var mapCanvas = document.getElementById("map");
+			var myCenter = new google.maps.LatLng(41.1661021,-8.6145764); 
+			var mapOptions = {center: myCenter, zoom: 16};
+			var map = new google.maps.Map(mapCanvas,mapOptions);
+			var marker = new google.maps.Marker({
+				position: myCenter,
+				animation: google.maps.Animation.BOUNCE
+			});
+			marker.setMap(map);
+		}
+	</script>
+	
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkQ1AKPU0hbERI51DNPj4NvdOO6MZhow0&callback=myMap"></script>
+	
+</body>
+</html>

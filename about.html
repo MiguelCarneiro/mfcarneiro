@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Miguel Carneiro's WebPage</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="Content/css/Site.css">
+	<link rel="stylesheet" href="Content/css/animate.min.css">
+  
+</head>
+
+<body class="homepage">
+
+    <header id="header">
+		<nav class="navbar navbar-inverse navbar-fixed-top" role="banner">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<div class="navbar-brand logo">Miguel Carneiro</div>
+				</div>
+
+				<div class="collapse navbar-collapse navbar-right">
+					<ul class="nav navbar-nav">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="skills.html">Skills</a></li>
+						<li><a href="educExp.html">Education & Experience</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<div class="body-content">
+		<div class="body-content-inside">
+			<h1 class="headerCustom">About Me</h1>
+			<hr>
+			<br>
+			<div class="container">
+				<div class="row" id="main-slider">
+					<div class="col-sm-4 active myself">
+						<img src="content/img/Myself.jpg" class="img-responsive img-thumbnail animation animated-item-2" alt="Myself">
+					</div>
+					<div class="col-sm-8 active">
+						<div class="animation animated-item-4" style="text-align:justify; text-justify:inter-word">
+							<h1 style="color:black">Hello!</h1>
+							<h2>My name is Miguel Carneiro and I was born and raised in Oporto, Portugal.</h2>
+							<h2>When I turned eight years old, my parents gave me the best gift that I could ask for 
+								- my first computer, a ZX Spectrum. Since then, I've been charmed and fascinated by 
+								the field of computers science.</h2>
+							<h2>Since 2001 until today, I've been working in several major companies, such as CPCIS, 
+								Unicer, NOS Systems and SONAE Sierra, as a computer technician. During this time, I've 
+								acquired experience and knowledge in computer networks, SAP systems, AD management, 
+								videoconferencing systems and providing support to company's software and all kind 
+								of computers.</h2>
+							<h2>In 2017 I finished my degree in Computer Engineering at ISEP and I look forward to 
+								a career change, acquiring knowledge and good practices in the field of development.</h2>
+							
+							<form style="text-align:right" target="_blank" action="https://drive.google.com/file/d/0B23NPTrPK6RKZmkzZnRxcDN1Nk0/view?usp=sharing">
+								<button type="submit" class="btn btn-danger"><span class="glyphicon glyphicon-download" aria-hidden="true"></span> Download CV</button>
+							</form>
+						</div>
+					</div>  
+				</div>
+			</div><!-- /container -->
+			
+		</div><!-- /body-content-inside -->
+	</div><!-- /body-content -->
+
+	<footer id="footer">
+		<div class="container">
+			<h6 id="year"></h6>
+		</div>
+	</footer>
+
+	<script>
+		document.getElementById("year").innerHTML = "@ " + new Date().getFullYear() + " Miguel Carneiro";
+	</script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+</body>
+</html>
